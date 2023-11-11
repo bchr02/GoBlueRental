@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.home-listing {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home {
+    margin: 15px;
+    text-align: center;
+}
+
+.home img {
+    width: 300px;
+    height: 200px;
+}
+
+.gallery .active-image {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 66px;
+    margin: 5px;
+    cursor: pointer;
+}
