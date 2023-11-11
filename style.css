@@ -1,50 +1,122 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-}
-
-header, footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f1f1f1;
-}
-
-nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
     color: #333;
 }
 
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Home Listing Section */
 .home-listing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.home {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.home img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Gallery */
+.gallery {
+    width: 80%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.gallery .active-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.thumbnails {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.home {
-    margin: 15px;
-    text-align: center;
-}
-
-.home img {
-    width: 300px;
-    height: 200px;
-}
-
-.gallery .active-image {
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-}
-
 .thumbnails img {
     width: 100px;
-    height: 66px;
+    height: auto;
     margin: 5px;
     cursor: pointer;
+    border-radius: 3px;
+    transition: transform 0.3s;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-listing {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 0.5rem;
+    }
+
+    .gallery {
+        width: 90%;
+    }
 }
