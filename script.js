@@ -14,13 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
   document
     .getElementById('galleryButtonLeft')
-    .addEventListener('click', function () {
+    ?.addEventListener('click', function () {
       navigateGallery(-1);
     });
 
   document
     .getElementById('galleryButtonRight')
-    .addEventListener('click', function () {
+    ?.addEventListener('click', function () {
       navigateGallery(1);
     });
 
