@@ -173,6 +173,10 @@ footer {
     .gallery {
         width: 90%;
     }
+
+    .room-layouts .room-layouts-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .logo {
@@ -216,6 +220,46 @@ footer {
     margin: 0;
     color: #333; /* Or any color that fits your design */
     line-height: 1.5;
+}
+
+.room-layouts {
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.room-layouts h2 {
+    margin: 0 0 1rem;
+    text-align: center;
+}
+
+.room-layouts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+    gap: 1rem;
+}
+
+.room-layouts figure {
+    margin: 0;
+    padding: 0.75rem;
+    background-color: #f8f8f8;
+}
+
+.room-layouts img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.room-layouts figcaption {
+    padding-top: 0.5rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .gallery-button {
